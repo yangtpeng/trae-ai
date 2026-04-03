@@ -33,27 +33,27 @@ const RainIcon = () => {
     <group scale={0.42}>
       <group ref={cloudRef} position={[0, 0.5, 0]}>
         <Sphere args={[0.22, 20, 20]} position={[0, 0, 0]}>
-          <meshStandardMaterial
-            color="#B8D4E3"
-            transparent
+          <meshStandardMaterial 
+            color="#B8D4E3" 
+            transparent 
             opacity={0.85}
             metalness={0.1}
             roughness={0.8}
           />
         </Sphere>
         <Sphere args={[0.15, 20, 20]} position={[-0.12, 0.04, 0]}>
-          <meshStandardMaterial
-            color="#C5DDE8"
-            transparent
+          <meshStandardMaterial 
+            color="#C5DDE8" 
+            transparent 
             opacity={0.8}
             metalness={0.1}
             roughness={0.8}
           />
         </Sphere>
         <Sphere args={[0.17, 20, 20]} position={[0.1, 0.05, 0]}>
-          <meshStandardMaterial
-            color="#C5DDE8"
-            transparent
+          <meshStandardMaterial 
+            color="#C5DDE8" 
+            transparent 
             opacity={0.82}
             metalness={0.1}
             roughness={0.8}

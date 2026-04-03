@@ -128,8 +128,8 @@ const CalendarCell = ({ date, x, z, weather, isCurrentDate, isHovered, onHover, 
           fontSize: '28px',
           fontWeight: isCurrentDate ? '900' : '700',
           color: isCurrentDate ? '#FF6B6B' : '#2d2d2d',
-          textShadow: isCurrentDate
-            ? '0 2px 10px rgba(255,107,107,0.6), 0 0 20px rgba(255,107,107,0.3)'
+          textShadow: isCurrentDate 
+            ? '0 2px 10px rgba(255,107,107,0.6), 0 0 20px rgba(255,107,107,0.3)' 
             : '0 1px 2px rgba(0,0,0,0.1)',
           userSelect: 'none',
           transition: 'transform 0.2s ease',
@@ -186,11 +186,11 @@ const CalendarCell = ({ date, x, z, weather, isCurrentDate, isHovered, onHover, 
             fontSize: '9px',
             padding: '2px 8px',
             borderRadius: '8px',
-            background: weather.weather === 'sunny'
+            background: weather.weather === 'sunny' 
               ? 'linear-gradient(135deg, #FFE066, #FFD93D)' :
-              weather.weather === 'cloudy'
-                ? 'linear-gradient(135deg, #B8D4E3, #A0C4D4)'
-                : 'linear-gradient(135deg, #A8D8EA, #7FC8DC)',
+              weather.weather === 'cloudy' 
+              ? 'linear-gradient(135deg, #B8D4E3, #A0C4D4)' 
+              : 'linear-gradient(135deg, #A8D8EA, #7FC8DC)',
             color: '#333',
             fontWeight: '700',
             boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
@@ -215,9 +215,9 @@ const CalendarCell = ({ date, x, z, weather, isCurrentDate, isHovered, onHover, 
             border: '1px solid rgba(255,255,255,0.1)',
             minWidth: '220px'
           }}>
-            <div style={{
-              marginBottom: '14px',
-              paddingBottom: '12px',
+            <div style={{ 
+              marginBottom: '14px', 
+              paddingBottom: '12px', 
               borderBottom: '1px solid rgba(255,255,255,0.1)',
               display: 'flex',
               alignItems: 'center',
@@ -234,36 +234,36 @@ const CalendarCell = ({ date, x, z, weather, isCurrentDate, isHovered, onHover, 
               </div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-              <div style={{
-                background: 'rgba(255,255,255,0.05)',
-                padding: '10px',
+              <div style={{ 
+                background: 'rgba(255,255,255,0.05)', 
+                padding: '10px', 
                 borderRadius: '12px',
                 textAlign: 'center'
               }}>
                 <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>🌡️ 温度</div>
                 <div style={{ fontWeight: '700', marginTop: '4px' }}>{weather.tempLow}° ~ {weather.tempHigh}°</div>
               </div>
-              <div style={{
-                background: 'rgba(255,255,255,0.05)',
-                padding: '10px',
+              <div style={{ 
+                background: 'rgba(255,255,255,0.05)', 
+                padding: '10px', 
                 borderRadius: '12px',
                 textAlign: 'center'
               }}>
                 <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>💧 降水</div>
                 <div style={{ fontWeight: '700', marginTop: '4px' }}>{weather.rainProb}%</div>
               </div>
-              <div style={{
-                background: 'rgba(255,255,255,0.05)',
-                padding: '10px',
+              <div style={{ 
+                background: 'rgba(255,255,255,0.05)', 
+                padding: '10px', 
                 borderRadius: '12px',
                 textAlign: 'center'
               }}>
                 <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>💨 风力</div>
                 <div style={{ fontWeight: '700', marginTop: '4px' }}>{weather.windSpeed}km/h</div>
               </div>
-              <div style={{
-                background: 'rgba(255,255,255,0.05)',
-                padding: '10px',
+              <div style={{ 
+                background: 'rgba(255,255,255,0.05)', 
+                padding: '10px', 
                 borderRadius: '12px',
                 textAlign: 'center'
               }}>

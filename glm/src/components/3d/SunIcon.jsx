@@ -32,11 +32,11 @@ const SunIcon = () => {
       <Sphere ref={glowRef} args={[0.5, 32, 32]}>
         <meshBasicMaterial color="#FFD93D" transparent opacity={0.2} />
       </Sphere>
-
+      
       <Sphere ref={coreRef} args={[0.28, 32, 32]}>
-        <meshStandardMaterial
-          color="#FFD93D"
-          emissive="#FFA500"
+        <meshStandardMaterial 
+          color="#FFD93D" 
+          emissive="#FFA500" 
           emissiveIntensity={1.2}
           metalness={0.3}
           roughness={0.2}
@@ -59,9 +59,9 @@ const SunIcon = () => {
             rotation={[0, -angle, 0]}
           >
             <boxGeometry args={[length, 0.05, 0.05]} />
-            <meshStandardMaterial
-              color="#FFE066"
-              emissive="#FFD93D"
+            <meshStandardMaterial 
+              color="#FFE066" 
+              emissive="#FFD93D" 
               emissiveIntensity={0.8}
               metalness={0.2}
               roughness={0.3}

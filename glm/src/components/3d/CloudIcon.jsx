@@ -38,21 +38,21 @@ const CloudIcon = () => {
           args={part.args}
           position={part.position}
         >
-          <meshStandardMaterial
-            color="#E8F4F8"
-            transparent
+          <meshStandardMaterial 
+            color="#E8F4F8" 
+            transparent 
             opacity={part.opacity}
             metalness={0.1}
             roughness={0.8}
           />
         </Sphere>
       ))}
-
+      
       <mesh position={[0, -0.15, 0]}>
         <sphereGeometry args={[0.12, 16, 16]} />
-        <meshStandardMaterial
-          color="#B8D4E3"
-          transparent
+        <meshStandardMaterial 
+          color="#B8D4E3" 
+          transparent 
           opacity={0.6}
           metalness={0.1}
           roughness={0.9}
